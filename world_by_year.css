@@ -69,3 +69,14 @@ main {
     margin: 1px;
     margin-bottom: 100px;
 }
+
+.text-image-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -10px
+}
+
+.events_per_year_plot img {
+    width: 700px;
+}
