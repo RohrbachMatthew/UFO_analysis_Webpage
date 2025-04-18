@@ -64,6 +64,53 @@ nav ul li a:hover {
     background-color: black;
 }
 
+/* New CSS for Dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    }
+    
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 16px;
+    }
+    
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 20px;
+    }
+    
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-radius: 20px;
+}
+    
+.dropdown-content a:hover {
+    background-color: #00000072;
+}
+    
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+    
+.dropdown:hover .dropbtn {
+    background-color: black;
+}
+
 main {
     padding: 10px;
     margin: 1px;
@@ -72,11 +119,44 @@ main {
 
 .text-image-container {
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin-top: -10px
+    margin-top: 5px;
+}
+
+.text-image-container h2 {
+    position: relative;
+    margin-top: -20px;
+    margin-bottom: 60px;
+}
+
+.text-image-container p {
+    margin-right: 10px;
+}
+
+.text-image-wrapper {
+    display: block;
+    width: 100%;
 }
 
 .events_per_year_plot img {
-    width: 700px;
+    width: 600px;
+}
+
+.events_per_day_plot img {
+    width: 600px;
+}
+
+.events_per_hour_plot img {
+    width: 550px;
+}
+
+.line_break {
+    border: none;
+    height: 5px;
+    background-color: black;
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
