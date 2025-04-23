@@ -97,6 +97,19 @@ main h2 {
     max-width: 100%;
     height: auto;
 }
+
+.image_content_world_map img {
+    width: 500px;
+    margin-top: 10px;
+    margin-right: 50px;
+}
+
+.line_break {
+    height: 3px; /* Adjust height if needed */
+    background-color: black; /* Keep the color */
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
     
 .button-container {
     text-align: center;
