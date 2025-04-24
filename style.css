@@ -76,6 +76,41 @@ main h2 {
 
 }
 
+/* Navigation guide*/
+.navigation-guide {
+    background-color:whitesmoke;
+    padding: 5px;
+    margin: 20px auto;
+    width: 55%;
+    border: 3px solid #4CAF50;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 15px;
+  }
+  .navigation-guide h3 {
+    margin-top: 0;
+    color: #333;
+  }
+  .navigation-guide p {
+    margin-top: -10px;
+  }
+  .navigation-guide ul {
+    list-style-type: none;
+    padding: 1px;
+    text-align: left;
+    margin-top: -10px;
+    margin-bottom: 0;
+  }
+  .navigation-guide ul li {
+    margin: 3px 0;
+    line-height: 1.5;
+    margin-left: 10px;
+  }
+  .navigation-guide ul li strong {
+    color: #4CAF50;
+  }
+  
+
 .text-image-container {
     display: flex;
     align-items: center;
@@ -85,6 +120,11 @@ main h2 {
     
 .text_content {
     width: 50%;
+    text-align: justify;
+}
+
+.text_content_description {
+    width: 35%;
     text-align: justify;
 }
 
@@ -98,10 +138,28 @@ main h2 {
     height: auto;
 }
 
+.image_content_world_map {
+    width: 20%;
+    text-align: center;
+}
+
 .image_content_world_map img {
-    width: 500px;
+    width: 350px;
     margin-top: 10px;
     margin-right: 50px;
+    margin-left: 0;
+}
+
+.image_content_country {
+    width: 30%;
+    text-align: center;
+}
+
+.image_content_country img {
+    width: 200px;
+    margin-top: 10px;
+    margin-right: 50px;
+    margin-left: 0;
 }
 
 .line_break {

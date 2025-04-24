@@ -8,7 +8,7 @@
   </head>
   <body>
     <header>
-      <h1 class="title">UFO Insights</h1>
+      <h1 class="title">UFO Data Analysis</h1>
       <nav>
         <ul>
           <li class="nav_button"><a href="index.html">Home</a></li>
@@ -31,26 +31,56 @@
     </header>
     <main>
       <h2>UFO Data Analysis Home Page</h2>
+      <section class="navigation-guide">
+        <h3>How to Navigate</h3>
+        <p>
+          Welcome to my UFO data exploration page! Here's how to explore the
+          website:
+        </p>
+        <ul>
+          <li>
+            <strong>Home:</strong> Discover an overview of the UFO data analysis
+            and insights.
+          </li>
+          <li>
+            <strong>World Wide Data:</strong> View plots and trends of UFO
+            sightings across the globe.
+          </li>
+          <li>
+            <strong>Country-Based Data:</strong> Dive into UFO data from
+            specific countries for a detailed perspective.
+          </li>
+          <li>
+            <strong>More:</strong> Access additional resources, insights, and
+            related content via the dropdown menu.
+          </li>
+        </ul>
+      </section>
+
       <section class="text-image-container">
         <div class="text_content">
           <p>
-            Are we alone in the universe? Perhaps yes, perhaps no. One thing for
-            sure is the staggering amount of data collected worldwide on
-            unidentified objects that have been reported by witnesses.
+            Are we alone in the universe? While the answer remains one of
+            humanity's greatest mysteries, the extensive data collected
+            worldwide on UFO sightings offers fascinating insights. Witnesses
+            from across the globe have reported countless encounters with
+            unidentified objects, sparking curiosity and scientific exploration.
             <br />
             <br />
-            This website helps to show insights gathered from the collection of
-            data turned into plots and graphs using Python, pandas, matplotlib,
-            and seaborn. The collection of data was gathered from
-            <a href="https://kaggle.com" target="_blank">kaggle.com</a>.
+            This website utilizes data sourced from
+            <a href="https://kaggle.com" target="_blank">kaggle.com</a> and
+            employs advanced tools and technologies to transform raw data into
+            compelling visualizations. By leveraging Python libraries like
+            pandas, matplotlib, and seaborn, alongside MySQL for robust data
+            management and the MySQL Connector for seamless integration, the
+            insights are organized into a variety of plots and graphs.
             <br />
             <br />
-            Quick summary of dataset and website.............. Lorem ipsum dolor
-            sit amet consectetur adipisicing elit. Dolor totam vero nisi
-            consequuntur molestiae. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Dolor totam vero nisi consequuntur molestiae.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor totam
-            vero nisi consequuntur molestiae.
+            The dataset covers UFO sightings from 1931 up to mid-2014, offering
+            a historical perspective on these phenomena. While the specific
+            visualizations are not described here, they provide comprehensive
+            coverage of UFO activity across the United States, non-US regions,
+            and combined datasets.
           </p>
         </div>
         <div class="image_content">
@@ -59,16 +89,23 @@
       </section>
       <hr class="line_break" />
       <section class="text-image-container">
-        <div class="text_content">
+        <div class="text_content_description">
           <p>
-            Based on the geographical plots we can see that the US holds the
-            most sightings. Because of this the data is biased in US. But for
-            analysis purpose I will exclude some US data and use combined data
-            from the world and us to make the analysis.
+            Based on the plots to the right its evident that the United States
+            (US) holds the most sightings in the geographical plots.
+            <br />
+            <br />
+            To ensure a balanced analysis, the data includes separate plots for
+            both US and non-US sightings, as well as combined datasets. This
+            comprehensive approach ensures a more robust and insightful
+            analysis.
           </p>
         </div>
         <div class="image_content_world_map">
           <img src="world_map_sightings.png" alt="World Map Image" />
+        </div>
+        <div class="image_content_country">
+          <img src="events_per_country.png" alt="World Map Image" />
         </div>
       </section>
       <section class="button-container">

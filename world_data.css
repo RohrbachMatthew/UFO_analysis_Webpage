@@ -103,6 +103,67 @@ body {
     padding: 10px;
     margin-bottom: 100px;
   }
+
+/* Navigation guide*/
+.navigation-guide {
+  background-color:whitesmoke;
+  padding: 5px;
+  margin: 20px auto;
+  width: 90%;
+  border: 3px solid #4CAF50;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 15px;
+}
+
+.navigation-layout {
+  display: flex;
+  align-items: center; /* Vertically centers the button and guide */
+  justify-content: center; /* Aligns both items horizontally in the container */
+  gap: 60px; /* Adds space between the button and the guide */
+  margin: 20px auto; /* Centers the entire layout on the page */
+  width: 80%; /* Adjusts the layout width, responsive to screen size */
+}
+
+.plots-button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: -80px;
+
+}
+
+.plots-button:hover {
+  background-color: #333;
+}
+
+.navigation-guide h3 {
+  margin-top: 0;
+  color: #333;
+}
+.navigation-guide p {
+  margin-top: -10px;
+}
+.navigation-guide ul {
+  list-style-type: none;
+  padding: 1px;
+  text-align: left;
+  margin-top: -10px;
+  margin-bottom: 0;
+}
+.navigation-guide ul li {
+  margin: 3px 0;
+  line-height: 1.5;
+  margin-left: 10px;
+}
+.navigation-guide ul li strong {
+  color: #4CAF50;
+}
   
   details summary {
     background-color: #4CAF50;
@@ -171,4 +232,73 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
+}
+
+@media (max-width: 768px) {
+  /* Body adjustments for better readability */
+  body {
+    font-size: 14px; /* Reduce font size slightly for smaller screens */
+  }
+
+  /* Navigation: Stacking items vertically */
+  nav ul {
+    display: flex;
+    flex-direction: column; /* Stack nav items vertically */
+    align-items: center; /* Center-align nav items */
+    margin: 0; /* Remove extra spacing */
+  }
+
+  nav ul li {
+    margin: 5px 0; /* Add spacing between vertical items */
+  }
+
+  .nav_button, .dropbtn {
+    width: 90%; /* Make buttons stretch across most of the screen */
+    text-align: center; /* Center button text */
+    padding: 10px 15px; /* Adjust padding for touch targets */
+  }
+
+  .dropdown-content {
+    min-width: 100%; /* Expand dropdown to fit smaller screens */
+  }
+
+  /* Navigation guide and plots button layout */
+  .navigation-layout {
+    flex-direction: column; /* Stack guide and button vertically */
+    gap: 15px; /* Add spacing between stacked items */
+    width: 100%; /* Use full width for mobile screens */
+  }
+
+  .plots-button {
+    width: 90%; /* Stretch button across screen */
+    margin-left: 0; /* Center align the button */
+  }
+
+  .navigation-guide {
+    width: 95%; /* Slightly reduce width for a snug fit */
+  }
+
+  /* Details Section */
+  details summary {
+    font-size: 14px; /* Shrink font size */
+    padding: 8px; /* Adjust padding */
+  }
+
+  /* Text-image container layout */
+  .text-image-container {
+    flex-direction: column; /* Stack images and text vertically */
+    gap: 20px; /* Add spacing between items */
+    align-items: center; /* Center items */
+  }
+
+  .text-image-container img {
+    width: 95%; /* Ensure images fit within screen width */
+    height: auto; /* Keep aspect ratio */
+  }
+
+  /* Footer adjustments */
+  footer {
+    font-size: 14px; /* Reduce font size */
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
 }
