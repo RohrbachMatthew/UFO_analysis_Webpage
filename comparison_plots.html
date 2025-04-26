@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>World Wide Data</title>
+    <link rel="stylesheet" href="comparison.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="title">UFO World Wide Insights</h1>
+      <nav>
+        <ul>
+          <li class="nav_button"><a href="index.html">Home</a></li>
+          <li class="nav_button dropdown">
+            <a href="#" class="dropbtn">Plots</a>
+            <ul class="dropdown-content">
+              <li><a href="#world_by_year">World by Year</a></li>
+              <li><a href="#world_by_month">World by Month</a></li>
+              <li><a href="#world_by_day">World by Day</a></li>
+              <li><a href="#world_by_hour">World by Hour</a></li>
+            </ul>
+          </li>
+          <li class="nav_button">
+            <a href="world_data.html">World Wide Data</a>
+          </li>
+          <li class="nav_button"><a href="">Country-Based Data</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="navigation-layout">
+        <button class="plots-button">Plots</button>
+        <section class="navigation-guide">
+          <h3>How to Navigate This Page</h3>
+          <p>
+            This page explores global UFO sightings trends using data
+            visualizations. Here's a quick guide:
+          </p>
+          <ul>
+            <li>
+              <strong>Plots Section:</strong> Use the dropdown button to the
+              left to jump to specific plots.
+            </li>
+            <li>
+              <strong>Interactive Summary:</strong> Click the dropdown sections
+              to access detailed insights for each plot.
+            </li>
+            <li>
+              <strong>Navigation Links:</strong> Use the "Home" or
+              "Country-Based Data" buttons to explore other sections of the
+              website.
+            </li>
+          </ul>
+        </section>
+      </div>
+      <!-- Starts dropdown menu-->
+      <details>
+        <summary>Time Based Insights</summary>
+        <div class="content">
+          <!-- Section: Annual Trends -->
+          <div class="text-image-wrapper">
+            <section class="text-image-container" id="world_by_year">
+              <div class="events_per_year_plot">
+                <img src="events_per_year.png" alt="Events per Year Plot" />
+              </div>
+              <div>
+                <h2>Annual Trends</h2>
+                <p>
+                  <b>Overview/Description:</b><br />
+                  This bar graph illustrates the number of UFO sightings
+                  reported each year. The data is sourced from Kaggle and spans
+                  decades.
+                </p>
+                <ul>
+                  <li>
+                    Is there an overall increase or decrease in sightings over
+                    time?
+                  </li>
+                  <li>Are there spikes during specific periods?</li>
+                  <li>
+                    Notable Years: Identify years with unusually high or low
+                    sightings.
+                  </li>
+                  <li>
+                    Are there clusters of heightened activity within particular
+                    timeframes?
+                  </li>
+                </ul>
+              </div>
+              <div class="events_per_year_plot">
+                <img src="events_per_year.png" alt="Events per Year Plot" />
+              </div>
+            </section>
+          </div>
+        </div>
+      </details>
+    </main>
+    <footer></footer>
+  </body>
+</html>
